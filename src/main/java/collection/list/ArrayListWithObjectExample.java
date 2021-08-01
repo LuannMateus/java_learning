@@ -1,6 +1,6 @@
-package collections.list;
+package collection.list;
 
-import collections.list.classesForTest.Phone;
+import collection.list.classesForTest.Phone;
 
 import java.util.ArrayList;
 import java.util.List;

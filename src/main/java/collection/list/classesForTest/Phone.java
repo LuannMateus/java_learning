@@ -1,4 +1,4 @@
-package collections.list.classesForTest;
+package collection.list.classesForTest;
 
 public class Phone {
   private String name;
