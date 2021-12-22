@@ -2,16 +2,15 @@ package collection.set;
 
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
 
 public class SetExample {
   public static void main(String[] args) {
 
     /*
-      ? Collection HashSet
-      * A ordem nao importa
-      * Nao aceita elementos repetidos
-    */
+     * ? Collection HashSet
+     * A ordem nao importa
+     * Nao aceita elementos repetidos
+     */
     HashSet<Double> studentGrade = new HashSet<>();
 
     // ? Adicionando elementos ao SET - ADD
@@ -33,7 +32,7 @@ public class SetExample {
     // ? Usando um ITERATOR em um SET
     Iterator<Double> iterator = studentGrade.iterator();
 
-    while(iterator.hasNext()) {
+    while (iterator.hasNext()) {
       System.out.println(iterator.next());
     }
 
@@ -42,7 +41,6 @@ public class SetExample {
 
     // ? Removendo todos os elementos - CLEAR
     studentGrade.clear();
-
 
   }
 }

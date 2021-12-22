@@ -15,7 +15,6 @@ public class Main {
 
     System.out.println(students);
 
-
     // ? Usando o sort das listas para ordenar os elementos
     students.sort((first, second) -> first.getAge() - second.getAge());
     System.out.println(students);
@@ -30,14 +29,12 @@ public class Main {
     students.sort(Comparator.comparingInt(Student::getAge).reversed());
     System.out.println(students);
 
-
     // ? Usando a classe Collection para ordenar os elementos
     Collections.sort(students);
     System.out.println(students);
 
     Collections.sort(students, new ReverseStudent());
     System.out.println(students);
-
 
   }
 }

@@ -26,17 +26,23 @@ public class TreeMapExample {
     // ? Retorna o elemento que esta abaixo da chave passada - LOWERKEY
     System.out.println(worldChampions.lowerKey("ALEMANHA"));
 
-    // ? Retorna chave e valor do elemento que esta no topo da arvore - FIRSTENTRY + GETKEY && FIRSTENTRY + GETVALUE
+    // ? Retorna chave e valor do elemento que esta no topo da arvore - FIRSTENTRY +
+    // GETKEY && FIRSTENTRY + GETVALUE
     System.out.println(worldChampions.firstEntry().getKey() + " -- " + worldChampions.firstEntry().getValue());
 
-    // ? Retorna chave e valor do elemento que esta no fim da arvore - LASTENTRY + GETKEY && LASTENTRY + GETVALUE
+    // ? Retorna chave e valor do elemento que esta no fim da arvore - LASTENTRY +
+    // GETKEY && LASTENTRY + GETVALUE
     System.out.println(worldChampions.lastEntry().getKey() + " -- " + worldChampions.lastEntry().getValue());
 
-    // ? Retorna chave e valor do elemento que esta acima da chave passada - HIGHERENTRY + GETKEY && HIGHERENTRY + GETVALUE
-    System.out.println(worldChampions.higherEntry("ALEMANHA").getKey() + " -- " + worldChampions.higherEntry("ALEMANHA").getValue());
+    // ? Retorna chave e valor do elemento que esta acima da chave passada -
+    // HIGHERENTRY + GETKEY && HIGHERENTRY + GETVALUE
+    System.out.println(
+        worldChampions.higherEntry("ALEMANHA").getKey() + " -- " + worldChampions.higherEntry("ALEMANHA").getValue());
 
-    // ? Retorna chave e valor do elemento que esta abaixo da chave passada - LOWERENTRY + GETKEY && LOWERENTRY + GETVALUE
-    System.out.println(worldChampions.lowerEntry("ITALIA").getKey() + " -- " + worldChampions.higherEntry("ITALIA").getValue());
+    // ? Retorna chave e valor do elemento que esta abaixo da chave passada -
+    // LOWERENTRY + GETKEY && LOWERENTRY + GETVALUE
+    System.out.println(
+        worldChampions.lowerEntry("ITALIA").getKey() + " -- " + worldChampions.higherEntry("ITALIA").getValue());
 
     // ? Retorna o elemento que esta no topo da arvore e o remove
     Map.Entry<String, Integer> firstEntry = worldChampions.pollFirstEntry();
@@ -62,8 +68,6 @@ public class TreeMapExample {
       System.out.println(element.getKey() + " -- " + element.getValue());
     }
 
-
   }
-
 
 }

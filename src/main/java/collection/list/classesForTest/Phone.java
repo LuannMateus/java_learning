@@ -10,19 +10,22 @@ public class Phone {
   }
 
   @Override
-  public int hashCode () {
+  public int hashCode() {
     return IMEI != null ? IMEI.hashCode() : 1;
   }
 
   @Override
   public boolean equals(Object obj) {
-    if (obj == null) return  false;
-    if (this == obj) return  true;
-    if (this.getClass() != obj.getClass()) return  false;
+    if (obj == null)
+      return false;
+    if (this == obj)
+      return true;
+    if (this.getClass() != obj.getClass())
+      return false;
 
     Phone otherPhone = (Phone) obj;
 
-    return  IMEI != null && IMEI.equals(otherPhone.getIMEI());
+    return IMEI != null && IMEI.equals(otherPhone.getIMEI());
   }
 
   @Override

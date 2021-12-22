@@ -1,18 +1,16 @@
 package collection.set;
 
-import com.sun.source.tree.Tree;
-
 import java.util.Iterator;
 import java.util.TreeSet;
 
 public class TreeSetExample {
   public static void main(String[] args) {
-     /*
-      ? Collection TreeSet
-      * Nao aceita elementos repetidos
-      * Mais lenta em comparacao com o HashSet
-      * Permite a ordenacao e reordenacao
-    */
+    /*
+     * ? Collection TreeSet
+     * Nao aceita elementos repetidos
+     * Mais lenta em comparacao com o HashSet
+     * Permite a ordenacao e reordenacao
+     */
     TreeSet<String> treeCapital = new TreeSet<>();
 
     // ? Adicionando elementos na TreeSet - ADD
@@ -47,11 +45,9 @@ public class TreeSetExample {
     // ? Usando um ITERATOR no TREESET
     Iterator<String> iterator = treeCapital.iterator();
 
-    while(iterator.hasNext()) {
+    while (iterator.hasNext()) {
       System.out.println(iterator.next());
     }
-
-
 
   }
 }

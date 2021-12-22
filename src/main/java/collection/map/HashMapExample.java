@@ -32,7 +32,7 @@ public class HashMapExample {
 
     // ? Usando um FOR EACH no MAP
     for (Map.Entry<String, Integer> entry : worldChampions.entrySet()) {
-      System.out.println(entry.getKey() + " -- " +entry.getValue());
+      System.out.println(entry.getKey() + " -- " + entry.getValue());
     }
 
     for (String key : worldChampions.keySet()) {

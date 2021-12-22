@@ -1,18 +1,16 @@
 package collection.set;
 
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
-import java.util.Set;
 
 public class LinkedHashSetExample {
   public static void main(String[] args) {
-     /*
-      ? Collection HashSet
-      * A ordem importa
-      * Nao aceita elementos repetidos
-      * Mais lenta em comparacao com o HashSet
-    */
+    /*
+     * ? Collection HashSet
+     * A ordem importa
+     * Nao aceita elementos repetidos
+     * Mais lenta em comparacao com o HashSet
+     */
     LinkedHashSet<Double> studentGrade = new LinkedHashSet<>();
 
     // ? Adicionando elementos ao LinkedHashSet - ADD

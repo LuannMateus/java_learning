@@ -10,7 +10,7 @@ public class Consumers {
     // Consumer<String> printAPhrase = phrase -> System.out.println(phrase);
 
     // ? Method Reference
-    // * O parâmetro se torna implicito e já passado para o método.
+    // * O parâmetro se torna implicito e já é passado para o método.
 
     Consumer<String> printAPhrase = System.out::println;
     printAPhrase.accept("Hello World!");
